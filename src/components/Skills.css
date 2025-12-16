@@ -1,0 +1,251 @@
+.h2{
+    /* margin-top: 40%;s */
+    margin: 60px auto 20px;
+    max-width: 600px;
+    align-items: center;
+}
+
+.skill{
+    display: flex;
+    /* gap: 50px; */
+    flex-wrap: wrap;
+    cursor: pointer;
+    gap: 6px 10px;
+    font-family:sans-serif;
+    max-width: 600px;
+    margin: 20px auto;     /* 🔥 center the section */
+
+}
+
+.skill p{
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    font-size: 15px ;
+
+}
+.html{
+    width: 70px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.html:hover{
+    background-color: rgb(114, 113, 113);
+}
+.css{
+    width: 50px;
+    height: 25px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.css:hover{
+    background-color: rgb(114, 113, 113);
+}
+.js{
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.js:hover{
+    background-color: rgb(114, 113, 113);
+}
+.react{
+    width: 70px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.react:hover{
+    background-color: rgb(114, 113, 113);
+}
+.python{
+    width: 70px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.python:hover{
+    background-color: rgb(114, 113, 113);
+}
+.cpp{
+    width: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.cpp:hover{
+    background-color: rgb(114, 113, 113);
+}
+.java{
+    width: 60px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.java:hover{
+    background-color: rgb(114, 113, 113);
+}
+.php{
+    width: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.php:hover{
+    background-color: rgb(114, 113, 113);
+}
+.next{
+    display: flex;
+    width: 60px;
+    height: 25px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.next:hover{
+    background-color: rgb(114, 113, 113);
+}
+.node{
+    width: 60px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.node:hover{
+    background-color: rgb(114, 113, 113);
+}
+.mysql{
+    width: 70px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.mysql:hover{
+    background-color: rgb(114, 113, 113);
+}
+.c{
+    width: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.c:hover{
+    background-color: rgb(114, 113, 113);
+}
+.fb{
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.fb:hover{
+    background-color: rgb(114, 113, 113);
+}
+body.dark .html{
+    background-color: white;
+    color: black;
+}
+body.dark .css{
+    background-color: white;
+    color: black;
+}
+body.dark .js{
+    background-color: white;
+    color: black;
+}
+body.dark .react{
+    background-color: white;
+    color: black;
+}
+body.dark .python{
+    background-color: white;
+    color: black;
+}
+body.dark .cpp{
+    background-color: white;
+    color: black;
+}
+body.dark .java{
+    background-color: white;
+    color: black;
+}
+body.dark .php{
+    background-color: white;
+    color: black;
+}
+body.dark .next{
+    background-color: white;
+    color: black;
+}
+body.dark .node{
+    background-color: white;
+    color: black;
+}
+body.dark .mysql{
+    background-color: white;
+    color: black;
+}
+body.dark .c{
+    background-color: white;
+    color: black;
+}
+body.dark .fb{
+    background-color: white;
+    color: black;
+}
+body.dark .html:hover{
+    background-color: rgb(114, 113, 113);
+}
+body.dark .css:hover{
+    background-color: rgb(114, 113, 113);
+}
+body.dark .js:hover{
+    background-color: rgb(114, 113, 113);
+}
+body.dark .react:hover{
+    background-color: rgb(114, 113, 113);
+}
+body.dark .python:hover{
+    background-color: rgb(114, 113, 113);
+}
+body.dark .cpp:hover{
+    background-color: rgb(114, 113, 113);
+}
+body.dark .java:hover{
+    background-color: rgb(114, 113, 113);
+}
+body.dark .php:hover{
+    background-color: rgb(114, 113, 113);
+}
+body.dark .next:hover{
+    background-color: rgb(114, 113, 113);
+}
+body.dark .node:hover{
+    background-color: rgb(114, 113, 113);
+}
+body.dark .mysql:hover{
+    background-color: rgb(114, 113, 113);
+}
+
+body.dark .c:hover{
+    background-color: rgb(114, 113, 113);
+}
+body.dark .fb:hover{
+    background-color: rgb(114, 113, 113);
+}

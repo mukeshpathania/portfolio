@@ -1,0 +1,214 @@
+.project{
+
+    border: 1px solid black;
+    width :190px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 60px auto 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    gap: 10px;
+
+}
+.para{
+    margin: 30px auto 20px;
+    /* width: 40%; */
+    max-width: 600px;
+    font-size: 20px;
+    text-align: center;
+}
+.fsc {
+  margin-top: 40px; /* 🔥 vertical gap */
+  width: 60%;
+  margin: 40px auto;
+  max-width: 600px;
+  display: flex;
+}
+/* .youtube {
+    width: 270px;      
+    height: 200px;     
+    overflow: hidden;  
+    border: 1px solid gray;
+    box-shadow: 10px 5px 20px lightgray;
+    border-top-left-radius: 10px;   
+    border-top-right-radius: 10px;  
+}
+
+.youtube img {
+    width: 100%;       
+    height: 85%;      
+    object-fit: contain; 
+} */
+ .youtube {
+    width: 300px;               /* Set desired width */
+    /* text-align: center;          Center the title */
+    margin: 20px;                /* Space between items */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Soft shadow */
+    border-radius: 10px;         /* Rounded corners */
+    overflow: hidden;            /* Ensure image follows border-radius */
+    background-color: #fff;      /* Optional: card background */
+    transition: transform 0.3s ease;
+}
+.youtube:hover{
+    transform: translateY(-1px) scale(1);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+
+}
+
+.youtube img {
+    width: 100%;                 /* Image fills div width */
+    height: auto;                /* Keep aspect ratio */
+    display: block;   
+    border-bottom: 1px solid black;           /* Remove bottom gap */
+}
+
+.youtube h4 {
+    margin: 10px 0;              /* Space above/below text */
+    font-size: 16px;             /* Adjust font size */
+    color: #333;    
+    padding-left: 10px;
+    padding-right: 10px;             /* Text color */
+}
+
+/* .food{
+    border: 1px solid gray;
+    width: 270px;
+    height: 200px;
+    box-shadow: 10px 5px 20px lightgray ;
+    border-top-left-radius: 15px;  
+    border-top-right-radius: 15px;  
+}
+.food img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} */
+ .food {
+    width: 300px;               /* Set desired width */
+    /* text-align: left;           */
+    margin: 20px;                /* Space between items */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Soft shadow */
+    border-radius: 10px;         /* Rounded corners */
+    overflow: hidden;            /* Ensure image follows border-radius */
+    background-color: #fff;      /* Optional: card background */
+}
+
+.food img {
+    width: 100%;                 /* Image fills div width */
+    height: auto;                /* Keep aspect ratio */
+    display: block;  
+    border-bottom: 1px solid black;            /* Remove bottom gap */
+}
+
+.food h4 {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px 0;              /* Space above/below text */
+    font-size: 16px;             /* Adjust font size */
+    color: #333;                 /* Text color */
+}
+.food p{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.youtube p{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.food:hover {
+  transform: translateY(-1px) scale(1);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+
+}
+.repo-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  background-color: black;
+}
+
+.repo-link:hover {
+  text-decoration: underline;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.tags span {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  background: #f2f2f2;
+  border-radius: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+}
+
+.btn.outline {
+  border: 1px solid #000;
+}
+.youtube .tags{
+    margin-top: 40px;
+}
+.youtube .actions{
+    margin-top: 45px;
+}
+body.dark .tags span {
+  background: #2a2a2a;
+  color: #f5f5f5;
+}
+body.dark .btn.outline {
+  border: 1px solid #f5f5f5;
+  color: #f5f5f5;
+}
+body.dark .food{
+    background-color: black;
+}
+body.dark .youtube{
+    background-color: black;
+}
+body.dark .content>h4{
+    color: white;
+}
+body.dark .content>p{
+    color: gray;
+}
+body.dark .youtube>h4{
+    color: white;
+}
+body.dark .youtube>p{
+    color: gray;
+}

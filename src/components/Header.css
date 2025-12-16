@@ -1,0 +1,93 @@
+/* .app{
+
+    margin-left: 20%;
+    margin-top: 85%;
+    margin-right: 20%;
+    border-radius: 40px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 4px 10px black;
+    justify-content: space-around;
+}
+
+
+.app>.linkedin:hover{
+    transition: all 0.3s ease;
+    cursor: pointer;
+} */
+.app {
+
+  height: 60px;
+  position: fixed;
+  bottom: 0;      /* distance from bottom */
+  left: 50%;         /* center horizontally */
+  transform: translateX(-50%); /* actual centering */
+  width: 20%;
+  
+  min-width: 300px;  /* optional */
+  max-width: 500px;
+
+      /* Full width */
+  z-index: 10000;
+  border-radius: 40px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  transition: background 0.3s ease;
+} 
+
+/* Dark mode header background */
+body.dark .app {
+  background: #1e1e1e;
+}
+
+/* Icons */
+.icon {
+  font-size: 22px;
+  cursor: pointer;
+  color: #111; 
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+/* Dark mode icons */
+body.dark .icon {
+  color: #ffffff;
+}
+
+.theme-icon{
+    font-size: 22px;
+}
+/* Hover animation */
+.icon:hover {
+  transform: translateY(-4px) scale(1.15);
+}
+
+/* Brand colors */
+.linkedin:hover {
+  color: #0077b5;
+}
+
+.github:hover {
+  color: #000;
+}
+
+body.dark .github:hover {
+  color: #ffffff;
+}
+
+.mail:hover{
+  color: #e1306c;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+.theme-icon:hover{
+  transform: translateY(-4px) scale(1.15);
+}
