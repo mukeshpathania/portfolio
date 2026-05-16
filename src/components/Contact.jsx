@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import { FaPaperPlane } from "react-icons/fa";
 
@@ -11,42 +10,59 @@ function Contact() {
   });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .send(
-        "service_0ppfkuc",
-        "template_6ermhll",
-        {
-          from_name: formData.name,
-          from_email: formData.email,
+    const response = await fetch(
+      "https://api.web3forms.com/submit",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "10b9c6e9-6d90-47c2-a019-d2c201c6692c",
+          name: formData.name,
+          email: formData.email,
           message: formData.message,
-        },
-        "tVnko6xHAU9T85Xwg"
-      )
-      .then(
-        () => {
-          alert("Message sent successfully ✅");
-          setFormData({ name: "", email: "", message: "" });
-        },
-        () => {
-          alert("Failed to send message ❌");
-        }
-      );
+        }),
+      }
+    );
+
+    const result = await response.json();
+
+    if (result.success) {
+      alert("Message sent successfully ✅");
+
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } else {
+      alert("Failed to send message ❌");
+    }
   };
 
   return (
     <div className="contact-container">
       <h2>Contact Me</h2>
+
       <p className="contact-text">
-        Feel free to reach out for collaboration, opportunities, or just to say hi 👋. Have a question or want to work together? Send me a message 👇
+        Feel free to reach out for collaboration
+        or opportunities 👋
       </p>
 
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form
+        className="contact-form"
+        onSubmit={handleSubmit}
+      >
         <input
           type="text"
           name="name"
@@ -67,15 +83,16 @@ function Contact() {
 
         <textarea
           name="message"
-          placeholder="Your Message"
           rows="5"
+          placeholder="Your Message"
           value={formData.message}
           onChange={handleChange}
           required
         />
 
         <button type="submit" className="send-btn">
-          <FaPaperPlane /> Send Message
+          <FaPaperPlane />
+          Send Message
         </button>
       </form>
     </div>
