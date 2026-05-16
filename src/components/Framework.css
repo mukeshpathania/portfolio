@@ -25,228 +25,132 @@
     font-size: 15px ;
 
 }
-.html{
+.numpy{
     width: 70px;
     align-items: center;
     text-align: center;
     justify-content: center;
     display: flex;
 }
-.html:hover{
+.numpy:hover{
     background-color: rgb(114, 113, 113);
 }
-.css{
-    width: 50px;
+.pandas{
+    width: 70px;
     height: 40px;
     align-items: center;
     text-align: center;
     justify-content: center;
     display: flex;
 }
-.css:hover{
+.pandas:hover{
     background-color: rgb(114, 113, 113);
 }
-.js{
+.Matplotlib{
     width: 100px;
     align-items: center;
     text-align: center;
     justify-content: center;
     display: flex;
 }
-.js:hover{
+.Matplotlib:hover{
     background-color: rgb(114, 113, 113);
 }
-.react{
-    width: 70px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-}
-.react:hover{
-    background-color: rgb(114, 113, 113);
-}
-.python{
-    width: 70px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-}
-.python:hover{
-    background-color: rgb(114, 113, 113);
-}
-.cpp{
+.Scikit-learn{
     width: 100px;
     align-items: center;
     text-align: center;
     justify-content: center;
     display: flex;
 }
-.cpp:hover{
+.Scikit-learn:hover{
     background-color: rgb(114, 113, 113);
 }
-.java{
-    width: 60px;
-    height: 40px;
+.TensorFlow{
+    width: 100px;
     align-items: center;
     text-align: center;
     justify-content: center;
     display: flex;
 }
-.java:hover{
+.TensorFlow:hover{
     background-color: rgb(114, 113, 113);
 }
-.php{
+.PyTorch{
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.PyTorch:hover{
+    background-color: rgb(114, 113, 113);
+}
+.OpenCV{
     width: 80px;
     align-items: center;
     text-align: center;
     justify-content: center;
     display: flex;
 }
-.php:hover{
+.OpenCV:hover{
     background-color: rgb(114, 113, 113);
 }
-.next{
+.Seaborn{
+    width: 80px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     display: flex;
-    width: 60px;
+}
+.Seaborn:hover{
+    background-color: rgb(114, 113, 113);
+}
+.HF{
+    display: flex;
+    width: 110px;
     height: 40px;
     align-items: center;
     text-align: center;
     justify-content: center;
 }
-.next:hover{
-    background-color: rgb(114, 113, 113);
-}
-.node{
-    width: 100px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-}
-.node:hover{
-    background-color: rgb(114, 113, 113);
-}
-.mysql{
-    width: 70px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-}
-.mysql:hover{
-    background-color: rgb(114, 113, 113);
-}
-.c{
-    width: 100px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-}
-.c:hover{
-    background-color: rgb(114, 113, 113);
-}
-.fb{
-    width: 100px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-}
-.fb:hover{
-    background-color: rgb(114, 113, 113);
-}
-body.dark .html{
-    background-color: white;
-    color: black;
-}
-body.dark .css{
-    background-color: white;
-    color: black;
-}
-body.dark .js{
-    background-color: white;
-    color: black;
-}
-body.dark .react{
-    background-color: white;
-    color: black;
-}
-body.dark .python{
-    background-color: white;
-    color: black;
-}
-body.dark .cpp{
-    background-color: white;
-    color: black;
-}
-body.dark .java{
-    background-color: white;
-    color: black;
-}
-body.dark .php{
-    background-color: white;
-    color: black;
-}
-body.dark .next{
-    background-color: white;
-    color: black;
-}
-body.dark .node{
-    background-color: white;
-    color: black;
-}
-body.dark .mysql{
-    background-color: white;
-    color: black;
-}
-body.dark .c{
-    background-color: white;
-    color: black;
-}
-body.dark .fb{
-    background-color: white;
-    color: black;
-}
-body.dark .html:hover{
-    background-color: rgb(114, 113, 113);
-}
-body.dark .css:hover{
-    background-color: rgb(114, 113, 113);
-}
-body.dark .js:hover{
-    background-color: rgb(114, 113, 113);
-}
-body.dark .react:hover{
-    background-color: rgb(114, 113, 113);
-}
-body.dark .python:hover{
-    background-color: rgb(114, 113, 113);
-}
-body.dark .cpp:hover{
-    background-color: rgb(114, 113, 113);
-}
-body.dark .java:hover{
-    background-color: rgb(114, 113, 113);
-}
-body.dark .php:hover{
-    background-color: rgb(114, 113, 113);
-}
-body.dark .next:hover{
-    background-color: rgb(114, 113, 113);
-}
-body.dark .node:hover{
-    background-color: rgb(114, 113, 113);
-}
-body.dark .mysql:hover{
+.HF:hover{
     background-color: rgb(114, 113, 113);
 }
 
-body.dark .c:hover{
-    background-color: rgb(114, 113, 113);
+body.dark .numpy{
+    background-color: white;
+    color: black;
 }
-body.dark .fb:hover{
-    background-color: rgb(114, 113, 113);
+body.dark .pandas{
+    background-color: white;
+    color: black;
+}
+body.dark .Matplotlib{
+    background-color: white;
+    color: black;
+}
+body.dark .Scikit-learn{
+    background-color: white;
+    color: black;
+}
+body.dark .TensorFlow{
+    background-color: white;
+    color: black;
+}
+body.dark .PyTorch{
+    background-color: white;
+    color: black;
+}
+body.dark .OpenCV{
+    background-color: white;
+    color: black;
+}
+body.dark .Seaborn{
+    background-color: white;
+    color: black;
+}
+body.dark .HF{
+    background-color: white;
+    color: black;
 }
