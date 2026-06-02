@@ -44,7 +44,7 @@ function Project() {
     {
   image: LLM, // add your image import
   title: "Fullstack LLM Chatbot",
-  date: "Jun 2026 - Jul 2026",
+  date: "Apr 2026 - May 2026",
   desc:
     "Built a full-stack AI chatbot application using Retrieval-Augmented Generation (RAG) and Large Language Models. The system enables users to interact with documents and receive context-aware responses by integrating vector embeddings, semantic search, and LLM-based generation. Implemented backend APIs, frontend UI, and document processing pipeline for seamless chat experience.",
   tags: [
