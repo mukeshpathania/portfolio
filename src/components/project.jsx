@@ -8,6 +8,8 @@ import RPG from "../image/rpg.jpg"
 import IMG from "../image/imgtopdf.png"
 import EDA from "../image/eda.jpg"
 import SMP from "../image/smp.webp"
+import RAG from "../image/RAG.png"
+import LLM from "../image/llm.png"
 
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
@@ -16,6 +18,50 @@ function Project() {
   const [index, setIndex] = useState(0);
 
   const projects = [
+      {
+      image: RAG,
+      title: "PDF Chat Bot Using RAG",
+      date: "May 2026 - Jun 2026",
+      desc:
+        "Developed an AI-powered PDF Chat Bot using Retrieval-Augmented Generation (RAG) that allows users to upload PDF documents and ask questions in natural language. Integrated LangChain, FAISS, and Google Gemini to perform document retrieval, semantic search, and context-aware answer generation for accurate responses.",
+      tags: [
+        "Python",
+        "LangChain",
+        "Google Gemini",
+        "FAISS",
+        "RAG",
+        "LLM",
+        "Vector Search",
+        "NLP",
+        "Document QA",
+        "Generative AI",
+      ],
+      github:
+        "https://github.com/mukeshpathania/PDF-Chat-Bot-Using-RAG",
+      live:
+        "https://huggingface.co/spaces/Mukesh1903/RAG_Model",
+    },
+    {
+  image: LLM, // add your image import
+  title: "Fullstack LLM Chatbot",
+  date: "Jun 2026 - Jul 2026",
+  desc:
+    "Built a full-stack AI chatbot application using Retrieval-Augmented Generation (RAG) and Large Language Models. The system enables users to interact with documents and receive context-aware responses by integrating vector embeddings, semantic search, and LLM-based generation. Implemented backend APIs, frontend UI, and document processing pipeline for seamless chat experience.",
+  tags: [
+    "Python",
+    "FastAPI",
+    "React",
+    "LangChain",
+    "RAG",
+    "LLM",
+    "Vector Database",
+    "Embeddings",
+    "NLP",
+    "Full Stack AI",
+  ],
+  github: "https://github.com/mukeshpathania/fullstack-llm-chatbot",
+  // live: "add-if-deployed"
+},
     {
       image: SMP,
       title: "Student Marks Predictor",
@@ -199,15 +245,28 @@ function Project() {
               </div>
 
               <div className="actions">
-                <a
-                  href={project.github}
-                  className="btn outline"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source
-                </a>
-              </div>
+
+                  <a
+                    href={project.github}
+                    className="btn outline"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source
+                  </a>
+
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      className="btn"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live Demo
+                    </a>
+                  )}
+
+                </div>
 
             </div>
           ))}
